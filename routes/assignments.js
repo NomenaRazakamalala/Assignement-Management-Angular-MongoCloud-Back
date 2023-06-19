@@ -6,7 +6,6 @@ function getAssignmentsSansPagination(req, res){
         if(err){
             res.send(err)
         }
-
         res.send(assignments);
     });
 }
@@ -45,6 +44,10 @@ function postAssignment(req, res){
     assignment.nom = req.body.nom;
     assignment.dateDeRendu = req.body.dateDeRendu;
     assignment.rendu = req.body.rendu;
+    assignment.score = req.body.score;
+    assignment.comment = req.body.comment;
+    assignment.idSubject = req.body.idSubject;
+    assignment.idStudent = req.body.idStudent;
 
     console.log("POST assignment reçu :");
     console.log(assignment)

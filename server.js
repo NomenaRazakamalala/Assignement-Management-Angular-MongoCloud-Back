@@ -2,13 +2,16 @@ let express = require('express');
 let app = express();
 let bodyParser = require('body-parser');
 let assignment = require('./routes/assignments');
+let student = require('./routes/students');
+let subject = require('./routes/subjects');
+let teacher = require('./routes/teachers');
 
 let mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 //mongoose.set('debug', true);
 
 // remplacer toute cette chaine par l'URI de connexion à votre propre base dans le cloud s
-const uri = 'mongodb+srv://mb:toto@cluster0.5e6cs7n.mongodb.net/assignments?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://stephan:1234@cluster0.mkyrvec.mongodb.net/assignments?retryWrites=true&w=majority';
 
 const options = {
   useNewUrlParser: true,
@@ -52,6 +55,10 @@ app.route(prefix + '/assignments/:id')
   .get(assignment.getAssignment)
   .delete(assignment.deleteAssignment);
   
+app.route(prefix + '/students').get(student.getStudents);
+app.route(prefix + '/subjects').get(subject.getSubjects);
+app.route(prefix + '/teachers').get(teacher.getTeachers);
+app.route(prefix + '/teachers/:id').get(teacher.getTeacher);
 
 // On démarre le serveur
 app.listen(port, "0.0.0.0");
