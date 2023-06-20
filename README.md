@@ -74,4 +74,4 @@ The application is hosted in render.com with at these following link: <br>
 
 # Demo
 Feel free to check out the captivating demonstration video by following the link below: <br>
-### Video: [https://youtu.be/cVVf92xc43I)https://youtu.be/cVVf92xc43I]
+### Video: https://youtu.be/cVVf92xc43I)https://youtu.be/cVVf92xc43I
