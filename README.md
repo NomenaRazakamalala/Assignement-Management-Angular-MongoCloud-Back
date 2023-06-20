@@ -71,3 +71,7 @@ To login, use "admin" username and "admin" password
 The application is hosted in render.com with at these following link: <br>
 ### Backend: https://nomena58-stephan11-assigment-ws.onrender.com/
 ### Frontend: https://nomena58-stephan11-assigment-front.onrender.com/
+
+# Demo
+Feel free to check out the captivating demonstration video by following the link below: <br>
+### Video: https://drive.google.com/drive/folders/1OBEwqDNcxsPzYA5Sk1mMtIwW4oYgBu-W?usp=sharing
